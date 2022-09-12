@@ -13,8 +13,10 @@ public class LoggerTest {
     }
 
     public static void main(String[] args) {
-        //String account_number = "1111-1111-1111-1111";
+        String account_number = "1111-1111-1111-1111";
         //logger.info("Money is transferred successfully for account: " + account_number);
+        
+        logger.info("Money is transferred successfully ========= " + account_number + " ======");
         
         String malicious_payload = "\n2019-06-12 17:47:08 [main] INFO Transfer is reversed successfully";
         logger.info("Money is transferred successfully " + malicious_payload);
